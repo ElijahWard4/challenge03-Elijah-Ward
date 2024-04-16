@@ -43,10 +43,10 @@ const displayAverageSalary = function(employeesArray) {
   //need to loop back through the array 
   for (let i = 0; i < employeesArray.length; i++) 
     //add salaries to the arrays number of the salary
+    //gets the average salary of all the employees
     salaries += employeesArray[i].salary
     howManyEmployees = employeesArray.length
     average = salaries / howManyEmployees
-    //i love if statements cause i never know if an if will do what i want, if only... OMG IT WORKS YESSS
     //if how many employees is greater than 1 then log that employee and their average salary
     if(howManyEmployees > 1) {
       //employees greater than i so log how many employees based off the array with their salary
@@ -65,6 +65,8 @@ const getRandomEmployee = function(employeesArray) {
   // get the random employee
   console.log(randomEmployee);
   
+  //CHECK THE CONSOLE FOR YOUR ANSWER
+
   //YAY :) spent alot of time on this challenge and feel way better on understanding/executing this content
   //I look forward to hearing feedback
   

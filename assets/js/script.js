@@ -25,11 +25,10 @@ const collectEmployees = function() {
     //create the employee based off our newEmployee information
     let employee = {"firstname": firstName, "lastname": lastName, "salary": salary};
     //then we log employee and push so it renders to next page 
-    //console.log(employee) ---i dont think i need this lol
     employeesArray.push(employee)
     console.log(employeesArray)
     //we need more employees so set newEmployee 
-    //found the function command confirm from google  
+    //confirm we want a new employee 
     newEmployee = confirm("Would you like to add another employee? ")
    }
    return employeesArray
@@ -48,6 +47,7 @@ const displayAverageSalary = function(employeesArray) {
     howManyEmployees = employeesArray.length
     average = salaries / howManyEmployees
     //i love if statements cause i never know if an if will do what i want, if only... OMG IT WORKS YESSS
+    //if how many employees is greater than 1 then log that employee and their average salary
     if(howManyEmployees > 1) {
       //employees greater than i so log how many employees based off the array with their salary
       console.log(`There are, ${employeesArray.length} employees with an average salary of ${average}.`)
@@ -61,11 +61,12 @@ const displayAverageSalary = function(employeesArray) {
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   //TODO: Select and display a random employee
-  let randomEmployee = employeesArray[Math.floor(Math.random() * employeesArray.length)];
+  let randomEmployee = employeesArray[Math.floor(Math.random() * employeesArray.length)]; 
   // get the random employee
-  let employeeLastName = employeesArray[randomEmployee];
-  console.log(employeeLastName);
-  //Couldnt solve getting the random employee yet, ive spent more than 20 hours on this challenge and im super stoked to have gotten this far. For now this will be my submission!!! YES!
+  console.log(randomEmployee);
+  
+  //YAY :) spent alot of time on this challenge and feel way better on understanding/executing this content
+  //I look forward to hearing feedback
   
 }
 

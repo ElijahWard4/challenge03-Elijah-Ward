@@ -49,7 +49,7 @@ const displayAverageSalary = function(employeesArray) {
     average = salaries / howManyEmployees
     //if how many employees is greater than 1 then log that employee and their average salary
     if(howManyEmployees > 1) {
-      //employees greater than i so log how many employees based off the array with their salary
+      //employees greater than 1 so log how many employees based off the array with their salary
       console.log(`There are, ${employeesArray.length} employees with an average salary of ${average}.`)
     }
     else if(howManyEmployees == 1){
@@ -68,7 +68,7 @@ const getRandomEmployee = function(employeesArray) {
   //CHECK THE CONSOLE FOR YOUR ANSWER
 
   //YAY :) spent alot of time on this challenge and feel way better on understanding/executing this content
-  //I look forward to hearing feedback
+  //I look forward to hearing feedback and improving
   
 }
 
